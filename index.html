@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nadia Shaikh | Computer Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">Nadia<span>Shaikh</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+      <i class="fas fa-sun"></i>
+    </button>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, World! 👋</p>
+      <h1 class="hero-title">Hi, I'm <span class="accent">Nadia Shaikh</span></h1>
+      <div class="hero-subtitle">
+        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        Computer Engineering student at Birzeit University with a passion for hardware design, 
+        systems programming, and building efficient software solutions. 
+        Proven problem-solver with a 98.1 Tawjihi GPA and hands-on project experience.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="mailto:nadiathaer77@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orbit-ring ring1">
+        <div class="orbit-dot"></div>
+      </div>
+      <div class="orbit-ring ring2">
+        <div class="orbit-dot"></div>
+      </div>
+      <div class="orbit-ring ring3">
+        <div class="orbit-dot"></div>
+      </div>
+      <div class="hero-avatar">
+        <div class="avatar-inner">
+          <i class="fas fa-microchip avatar-icon"></i>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-card glass">
+          <div class="about-icon"><i class="fas fa-user-circle"></i></div>
+          <h3>Who I Am</h3>
+          <p>
+            I'm Nadia Shaikh, a Computer Engineering student at Birzeit University in Palestine. 
+            I blend hardware design expertise with software development skills to build complete systems.
+          </p>
+        </div>
+        <div class="about-card glass">
+          <div class="about-icon"><i class="fas fa-microchip"></i></div>
+          <h3>What I Do</h3>
+          <p>
+            I design digital circuits, implement RISC processors in Verilog, and develop 
+            software in Java, C, MIPS Assembly, and Bash — bridging the gap between hardware and software.
+          </p>
+        </div>
+        <div class="about-card glass">
+          <div class="about-icon"><i class="fas fa-rocket"></i></div>
+          <h3>My Goals</h3>
+          <p>
+            Expected to graduate June 2026. Passionate about computer architecture, 
+            embedded systems, and low-level programming. Looking to make an impact in the tech world.
+          </p>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat glass">
+          <span class="stat-num" data-target="98.1">0</span><span>%</span>
+          <p>Tawjihi GPA</p>
+        </div>
+        <div class="stat glass">
+          <span class="stat-num" data-target="10">0</span><span>+</span>
+          <p>Projects Built</p>
+        </div>
+        <div class="stat glass">
+          <span class="stat-num" data-target="7">0</span><span>+</span>
+          <p>Technologies</p>
+        </div>
+        <div class="stat glass">
+          <span class="stat-num" data-target="2">0</span><span></span>
+          <p>Languages</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-category glass">
+          <h3><i class="fas fa-code"></i> Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">MIPS Assembly</span>
+            <span class="tag">C</span>
+            <span class="tag">Java</span>
+            <span class="tag">Bash Scripting</span>
+            <span class="tag">System Verilog</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar"><span>C / MIPS Assembly</span><div class="bar"><div class="bar-fill" data-w="88"></div></div></div>
+            <div class="skill-bar"><span>Java / OOP</span><div class="bar"><div class="bar-fill" data-w="85"></div></div></div>
+            <div class="skill-bar"><span>Bash Scripting</span><div class="bar"><div class="bar-fill" data-w="80"></div></div></div>
+            <div class="skill-bar"><span>System Verilog / HDL</span><div class="bar"><div class="bar-fill" data-w="82"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category glass">
+          <h3><i class="fas fa-microchip"></i> Hardware Design</h3>
+          <div class="skill-tags">
+            <span class="tag">Digital Circuits</span>
+            <span class="tag">FPGA Simulation</span>
+            <span class="tag">Electric EDA</span>
+            <span class="tag">Testbenches</span>
+            <span class="tag">FSM Design</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar"><span>Digital Circuit Design</span><div class="bar"><div class="bar-fill" data-w="87"></div></div></div>
+            <div class="skill-bar"><span>RISC Processor Design</span><div class="bar"><div class="bar-fill" data-w="83"></div></div></div>
+            <div class="skill-bar"><span>Electric EDA</span><div class="bar"><div class="bar-fill" data-w="80"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category glass">
+          <h3><i class="fas fa-sitemap"></i> DSA & Software</h3>
+          <div class="skill-tags">
+            <span class="tag">Sorting Algorithms</span>
+            <span class="tag">Hashing</span>
+            <span class="tag">Expression Trees</span>
+            <span class="tag">OOP</span>
+            <span class="tag">JavaFX</span>
+            <span class="tag">Linux</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar"><span>Data Structures</span><div class="bar"><div class="bar-fill" data-w="90"></div></div></div>
+            <div class="skill-bar"><span>Algorithms</span><div class="bar"><div class="bar-fill" data-w="86"></div></div></div>
+            <div class="skill-bar"><span>Linux / Git</span><div class="bar"><div class="bar-fill" data-w="78"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category glass soft-skills">
+          <h3><i class="fas fa-users"></i> Soft Skills</h3>
+          <div class="soft-skill-list">
+            <div class="soft-item"><i class="fas fa-check-circle"></i><span>Efficient Under Pressure</span></div>
+            <div class="soft-item"><i class="fas fa-check-circle"></i><span>Strong Communication</span></div>
+            <div class="soft-item"><i class="fas fa-check-circle"></i><span>Team Collaboration</span></div>
+            <div class="soft-item"><i class="fas fa-check-circle"></i><span>Time Management</span></div>
+            <div class="soft-item"><i class="fas fa-check-circle"></i><span>Organized & Detail-Oriented</span></div>
+            <div class="soft-item"><i class="fas fa-check-circle"></i><span>Arabic & English (B2)</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="hardware">Hardware</button>
+        <button class="filter-btn" data-filter="software">Software</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card glass" data-category="hardware">
+          <div class="project-icon"><i class="fas fa-plus-square"></i></div>
+          <div class="project-tag">Hardware</div>
+          <h3>8×8 Carry Look-Ahead Adder</h3>
+          <p>High-speed CLA adder by cascading two 4×4 modules, reducing propagation delay. Extended to 16×16 for higher-bit operations.</p>
+          <div class="project-tech">
+            <span>Digital Circuits</span><span>Electric EDA</span><span>CLA</span>
+          </div>
+        </div>
+
+        <div class="project-card glass" data-category="hardware">
+          <div class="project-icon"><i class="fas fa-cpu"></i></div>
+          <div class="project-tag">Hardware</div>
+          <h3>Multicycle RISC Processor</h3>
+          <p>16-bit multicycle RISC processor with a five-stage execution model. Verified via Verilog testbenches focusing on cycle efficiency.</p>
+          <div class="project-tech">
+            <span>Verilog</span><span>FPGA</span><span>Testbenches</span>
+          </div>
+        </div>
+
+        <div class="project-card glass" data-category="hardware">
+          <div class="project-icon"><i class="fas fa-project-diagram"></i></div>
+          <div class="project-tag">Hardware</div>
+          <h3>Moore FSM Sequence Detector</h3>
+          <p>Designed a Moore finite state machine using T-Flip Flops, verified through simulation and testbench analysis.</p>
+          <div class="project-tech">
+            <span>FSM</span><span>T-Flip Flops</span><span>Simulation</span>
+          </div>
+        </div>
+
+        <div class="project-card glass" data-category="software">
+          <div class="project-icon"><i class="fas fa-calculator"></i></div>
+          <div class="project-tag">Software</div>
+          <h3>Linear Equations Solver</h3>
+          <p>MIPS Assembly-based solver for linear equations with file handling, input validation, and an interactive user menu.</p>
+          <div class="project-tech">
+            <span>MIPS Assembly</span><span>File I/O</span>
+          </div>
+        </div>
+
+        <div class="project-card glass" data-category="software">
+          <div class="project-icon"><i class="fas fa-file-medical"></i></div>
+          <div class="project-tag">Software</div>
+          <h3>Medical Test Record System</h3>
+          <p>Bash script for managing medical test records with advanced search, filter options, and data validation.</p>
+          <div class="project-tech">
+            <span>Bash</span><span>Linux</span><span>Data Validation</span>
+          </div>
+        </div>
+
+        <div class="project-card glass" data-category="software">
+          <div class="project-icon"><i class="fas fa-pizza-slice"></i></div>
+          <div class="project-tag">Software</div>
+          <h3>Pizza Order Management</h3>
+          <p>Java OOP-based system with dynamic pricing, inheritance hierarchies, and a JavaFX GUI with real-time order updates and sorting.</p>
+          <div class="project-tech">
+            <span>Java</span><span>JavaFX</span><span>OOP</span>
+          </div>
+        </div>
+
+        <div class="project-card glass" data-category="software">
+          <div class="project-icon"><i class="fas fa-tree"></i></div>
+          <div class="project-tag">Software</div>
+          <h3>Expression Tree Evaluator</h3>
+          <p>Arithmetic expression evaluator in C using post-order traversal and binary expression trees for efficient computation.</p>
+          <div class="project-tech">
+            <span>C</span><span>Trees</span><span>Post-Order Traversal</span>
+          </div>
+        </div>
+
+        <div class="project-card glass" data-category="software">
+          <div class="project-icon"><i class="fas fa-hashtag"></i></div>
+          <div class="project-tag">Software</div>
+          <h3>Hashing Dictionary</h3>
+          <p>Hash table implementation in C with efficient collision handling for constant-time lookups and dictionary management.</p>
+          <div class="project-tech">
+            <span>C</span><span>Hashing</span><span>Collision Handling</span>
+          </div>
+        </div>
+
+        <div class="project-card glass" data-category="software">
+          <div class="project-icon"><i class="fas fa-sort-amount-down"></i></div>
+          <div class="project-tag">Software</div>
+          <h3>Radix Sort CLI</h3>
+          <p>Radix sort algorithm using doubly linked lists with an interactive CLI menu for user-driven sorting operations.</p>
+          <div class="project-tech">
+            <span>C</span><span>Linked Lists</span><span>CLI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section education">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Education</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos="left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-date">2021 – Present</div>
+            <h3>B.S. Computer Engineering <span class="status-badge">In Progress</span></h3>
+            <p class="institution"><i class="fas fa-university"></i> Birzeit University, Palestine</p>
+            <p>Expected Graduation: June 2026</p>
+            <div class="coursework">
+              <h4>Relevant Coursework:</h4>
+              <div class="course-tags">
+                <span>Computer Architecture</span>
+                <span>Digital Integrated Circuits</span>
+                <span>Data Structures & Algorithms</span>
+                <span>Linux Lab</span>
+                <span>OOP</span>
+                <span>Advanced Digital Design</span>
+                <span>Hardware Lab</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-date">2021</div>
+            <h3>High Tawjihi Certificate <span class="status-badge gold">Graduated</span></h3>
+            <p class="institution"><i class="fas fa-school"></i> Scientific Stream</p>
+            <div class="gpa-display">
+              <span class="gpa-label">GPA</span>
+              <span class="gpa-value">98.1%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <p class="section-sub">Have a project in mind or want to collaborate? Let's connect!</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item glass">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:nadiathaer77@gmail.com">nadiathaer77@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item glass">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:0593898543">0593898543</a>
+            </div>
+          </div>
+          <div class="contact-item glass">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <span>Ramallah, Palestine</span>
+            </div>
+          </div>
+          <div class="contact-item glass">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="www.linkedin.com/in/nadia-shaikh-04434321b
+
+" target="_blank">linkedin.com/in/nadia-shaikh</a>
+            </div>
+          </div>
+          <div class="contact-item glass">
+            <i class="fab fa-github"></i>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/NadiaThaer" target="_blank">github.com/nadia-shaikh</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form glass" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder=" " required />
+            <label for="name">Your Name</label>
+            <div class="form-line"></div>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder=" " required />
+            <label for="email">Your Email</label>
+            <div class="form-line"></div>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder=" " required />
+            <label for="subject">Subject</label>
+            <div class="form-line"></div>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder=" " required></textarea>
+            <label for="message">Message</label>
+            <div class="form-line"></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div id="formMsg" class="form-feedback"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">Nadia<span>Shaikh</span></p>
+      <p>© 2025 Nadia Shaikh · Computer Engineer · Palestine</p>
+      <div class="footer-socials">
+        <a href="www.linkedin.com/in/nadia-shaikh-04434321b" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/NadiaThaer" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:nadiathaer77@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="web.js"></script>
+</body>
+</html>
