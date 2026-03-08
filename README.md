@@ -1,3 +1,7 @@
-## 🌐 Portfolio
+## 🌐 My Portfolio
 
-[![Portfolio](Mywebsite.gif)](https://nadiathaer.github.io/Portfolio/)
+<p align="center">
+  <a href="https://nadiathaer.github.io/Portfolio/">
+    <img src="Mywebsite.gif" width="800">
+  </a>
+</p>
