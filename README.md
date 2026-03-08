@@ -1,3 +1,3 @@
 ## 🌐 Portfolio
 
-[![Portfolio](portfolio.png)](https://nadiathaer.github.io/Portfolio/)
+[![Portfolio](Mywebsite.gif)](https://nadiathaer.github.io/Portfolio/)
